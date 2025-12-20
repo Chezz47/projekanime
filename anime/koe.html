@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koe no Katachi - Detail Anime</title>
+  <link rel="stylesheet" href="anime.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Poster anime + info tambahan -->
+    <div class="poster">
+      <img src="foto/Koe no Katachi.jpg" alt="Koe no Katachi">
+
+      <div class="details-box">
+        <h3>Informasi Anime</h3>
+        <p><strong>Genre:</strong> Drama</p>
+        <p><strong>Ditayangkan:</strong> Sep 17, 2016</p>
+        <p><strong>Tahun Rilis:</strong> 2016</p>
+        <p><strong>Jumlah Episode:</strong> 1</p>
+        <p><strong>Durasi:</strong> 2 jam 10 menit</p>
+        <p><strong>Studio:</strong> Kyoto Animation</p>
+      </div>
+
+      <div class="platform-box">
+        <h3>Platform Streaming:</h3>
+        <div class="platform-links">
+          <a href="https://www.netflix.com/id" target="_blank">Netflix</a>
+        </div>
+      </div>
+
+      <button onclick="goBack()" class="back-btn">← Kembali</button>
+    </div>
+
+    <!-- Info anime -->
+    <div class="info">
+      <div class="sinopsis">
+        <h2>Koe no Katachi</h2>
+        <p>
+         Cerita ini mengikuti Shoya Ishida, seorang siswa sekolah dasar yang pernah membully seorang gadis tuli bernama
+          Shoko Nishimiya. Tindakannya membuat Shoko pindah sekolah, dan Shoya menjadi sasaran kritik dari teman-temannya
+           sendiri, hingga ia merasa bersalah dan terasing.
+        <br><br>
+          Bertahun-tahun kemudian, Shoya bertekad untuk menebus kesalahannya dan memperbaiki hubungannya dengan Shoko. 
+          Ia menghadapi kesulitan komunikasi, rasa malu, dan stigma sosial sambil berusaha menunjukkan penyesalan dan kebaikan.
+        <br><br>
+          Koe no Katachi mengeksplorasi tema penebusan, persahabatan, bullying, dan penerimaan diri. Ceritanya emosional, menyentuh, 
+          dan menghadirkan momen refleksi mendalam tentang bagaimana tindakan kecil dapat berdampak besar pada hidup orang lain.
+        </p>
+      </div>
+
+      <!-- === TEASER + MUSIC SECTION === -->
+<div class="media-section">
+
+  <!-- TEASER -->
+  <div class="teaser">
+    <h3>Teaser / Preview</h3>
+    <button id="openTrailer" class="trailer-btn">Tonton Trailer</button>
+  </div>
+
+  <!-- MUSIC BOX -->
+  <div class="music-box">
+    <h3>Opening & Ending</h3>
+
+    <a href="https://open.spotify.com/track/2EMmHEhCZSMMEM85HTFJvj?si=083423c5b0904786" target="_blank" class="music-link">
+      🎵 Opening Theme
+    </a>
+
+    <a href="https://open.spotify.com/track/4djnzEBxRzNkitxZRPGmzy?si=fc9dc8b6d07844d4" target="_blank" class="music-link">
+      🎵 Ending Theme
+    </a>
+  </div>
+
+</div>
+
+
+      <div class="character-section">
+  <h3>Character & Voice Actor</h3>
+
+  <!-- 1 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Shouko Nishimiya.jpg" alt="char">
+      <div>
+        <p class="char-name">Shouko Nishimiya</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Hayami Saori</p>
+      </div>
+      <img src="Voice actor/Hayami, Saori.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Shouya Ishida.jpg" alt="char">
+      <div>
+        <p class="char-name">Shouya Ishida</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Irino Miyu</p>
+      </div>
+      <img src="Voice actor/Irino, Miyu.jpg" alt="VA">
+    </div>
+  </div>
+  
+  <!-- 3 -->
+   <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Yuzuru Nishimiya.jpg" alt="char">
+      <div>
+        <p class="char-name">Yuzuru Nishimiya</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Yuuki Aoi</p>
+      </div>
+      <img src="Voice actor/Yuuki, Aoi.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Naoka Ueno.jpg" alt="char">
+      <div>
+        <p class="char-name">Naoka Ueno</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Kaneko Yuuki</p>
+      </div>
+      <img src="Voice actor/Kaneko, Yuuki.jpg" alt="VA">
+    </div>
+  </div>
+
+</div>
+
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </div>
+  </div>
+
+  <!-- Popup Trailer -->
+<div id="trailerPopup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close-btn">&times;</span>
+    
+    <iframe id="trailerVideo" width="560" height="315"
+      src=""    
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe> 
+  </div>
+</div>
+
+<script>
+  const openBtn = document.getElementById('openTrailer');
+  const popup = document.getElementById('trailerPopup');
+  const closeBtn = document.getElementById('closePopup');
+  const trailerVideo = document.getElementById('trailerVideo');
+
+  const trailerURL = "https://www.youtube.com/embed/b_ePl3_RpJ0"; // trailer
+
+  openBtn.onclick = () => {
+    popup.style.display = "flex";          // munculkan popup
+    trailerVideo.src = trailerURL + "?autoplay=1";  // mulai video otomatis
+  };
+
+  closeBtn.onclick = () => {
+    popup.style.display = "none";
+    trailerVideo.src = ""; // stop video
+  };
+
+  // Tutup popup kalau klik di luar kotak
+  window.onclick = (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      trailerVideo.src = "";
+    }
+  };
+</script>
+
+</body>
+</html>

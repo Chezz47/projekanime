@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suzume no Tojimari  - Detail Anime</title>
+  <link rel="stylesheet" href="anime.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Poster anime + info tambahan -->
+    <div class="poster">
+      <img src="foto/Suzume no Tojimari.jpg" alt="Suzume no Tojimari">
+
+      <div class="details-box">
+        <h3>Informasi Anime</h3>
+        <p><strong>Genre:</strong> Adventure, Supernatural</p>
+        <p><strong>Ditayangkan:</strong> Nov 11, 2022</p>
+        <p><strong>Tahun Rilis:</strong> 2022</p>
+        <p><strong>Jumlah Episode:</strong> 1</p>
+        <p><strong>Durasi:</strong> 2 jam 1 menit</p>
+        <p><strong>Studio:</strong> CoMix Wave Films</p>
+      </div>
+
+      <div class="platform-box">
+        <h3>Platform Streaming:</h3>
+        <div class="platform-links">
+          <a href="https://suzume-tojimari-movie.jp/" target="_blank">Official Site</a>
+        </div>
+      </div>
+
+      <button onclick="goBack()" class="back-btn">← Kembali</button>
+    </div>
+
+    <!-- Info anime -->
+    <div class="info">
+      <div class="sinopsis">
+        <h2>Suzume no Tojimari</h2>
+        <p>
+         17 tahun‑an Suzume Iwato tinggal di Kyushu suatu hari ia bertemu seorang pemuda misterius yang sedang mencari “pintu”.
+          Karena penasaran, Suzume ikut dan tanpa sengaja membuka sebuah pintu magis. Akibatnya, kekuatan supranatural dilepaskan,
+           memicu potensi bencana besar.
+        <br><br>
+          Untuk memperbaiki kesalahan tersebut, Suzume bersama pemuda itu dan beragam keanehan seperti kursi hidup dan kucing
+           misterius memulai perjalanan keliling Jepang untuk “menutup pintu‑pintu” yang tersebar. Perjalanan ini membawa
+            mereka ke berbagai tempat: kota besar, pedesaan, bangunan tua sambil menghadapi bahaya supernatural serta beban
+             emosional yang berat.
+        <br><br>
+          Lewat petualangan, Suzume harus menghadapi trauma masa lalu dan rasa kehilangan, serta memilih antara menyerah atau 
+          bertarung demi keselamatan banyak orang. Film ini menampilkan perpaduan antara fantasi, tragedi, dan harapan dengan
+           visual yang memukau, nuansa emosional yang dalam, serta tema air mata sekaligus keindahan.
+        </p>
+      </div>
+
+      <!-- === TEASER + MUSIC SECTION === -->
+<div class="media-section">
+
+  <!-- TEASER -->
+  <div class="teaser">
+    <h3>Teaser / Preview</h3>
+    <button id="openTrailer" class="trailer-btn">Tonton Trailer</button>
+  </div>
+
+  <!-- MUSIC BOX -->
+  <div class="music-box">
+    <h3>Opening & Ending</h3>
+
+    <a href="https://open.spotify.com/track/1n1y2kFPISpF9WGD3JaFo5?si=8fac98bf49cf4776" target="_blank" class="music-link">
+      🎵 Opening Theme
+    </a>
+
+    <a href="https://open.spotify.com/track/1ycf4u2wapkaVFHzScFmOv?si=3b77aa2fc15c4b69" target="_blank" class="music-link">
+      🎵 Ending Theme
+    </a>
+  </div>
+
+</div>
+
+
+      <div class="character-section">
+  <h3>Character & Voice Actor</h3>
+
+  <!-- 1 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Suzume Iwato.jpg" alt="char">
+      <div>
+        <p class="char-name">Suzume Iwato</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Hara Nanoka</p>
+      </div>
+      <img src="Voice actor/Hara, Nanoka.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Souta Munakata.jpg" alt="char">
+      <div>
+        <p class="char-name">Souta Munakata</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Matsumura Hokuto</p>
+      </div>
+      <img src="Voice actor/Matsumura, Hokuto.jpg" alt="VA">
+    </div>
+  </div>
+  
+  <!-- 3 -->
+   <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Daijin.jpg" alt="char">
+      <div>
+        <p class="char-name">Daijin</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Yamane Ann</p>
+      </div>
+      <img src="Voice actor/Yamane, Ann.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Tomoya Serizawa.jpg" alt="char">
+      <div>
+        <p class="char-name">Tomoya Serizawa
+        </p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Kamiki Ryunosuke</p>
+      </div>
+      <img src="Voice actor/Kamiki, Ryunosuke.jpg" alt="VA">
+    </div>
+  </div>
+
+</div>
+
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </div>
+  </div>
+
+  <!-- Popup Trailer -->
+<div id="trailerPopup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close-btn">&times;</span>
+    
+    <iframe id="trailerVideo" width="560" height="315"
+      src=""    
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe> 
+  </div>
+</div>
+
+<script>
+  const openBtn = document.getElementById('openTrailer');
+  const popup = document.getElementById('trailerPopup');
+  const closeBtn = document.getElementById('closePopup');
+  const trailerVideo = document.getElementById('trailerVideo');
+
+  const trailerURL = "https://www.youtube.com/embed/g0JMPkn7Wuo"; // trailer
+
+  openBtn.onclick = () => {
+    popup.style.display = "flex";          // munculkan popup
+    trailerVideo.src = trailerURL + "?autoplay=1";  // mulai video otomatis
+  };
+
+  closeBtn.onclick = () => {
+    popup.style.display = "none";
+    trailerVideo.src = ""; // stop video
+  };
+
+  // Tutup popup kalau klik di luar kotak
+  window.onclick = (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      trailerVideo.src = "";
+    }
+  };
+</script>
+
+</body>
+</html>

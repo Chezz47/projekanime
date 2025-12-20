@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lord of Mysteries - Detail Anime</title>
+  <link rel="stylesheet" href="anime.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Poster anime + info tambahan -->
+    <div class="poster">
+      <img src="foto/Lord of Mysteries.jpg" alt="Lord of Mysteries">
+
+      <div class="details-box">
+        <h3>Informasi Anime</h3>
+        <p><strong>Genre:</strong> Action, Fantasy, Mystery</p>
+        <p><strong>Ditayangkan:</strong> 28 Juni 2025 Sampai 16 Agustus 2025</p>
+        <p><strong>Tahun Rilis:</strong> 2025</p>
+        <p><strong>Jumlah Episode:</strong> 13</p>
+        <p><strong>Durasi:</strong> 35 menit</p>
+        <p><strong>Studio:</strong> B.CMAY PICTURES</p>
+      </div>
+
+      <div class="platform-box">
+        <h3>Platform Streaming:</h3>
+        <div class="platform-links">
+          <a href="https://www.crunchyroll.com/discover" target="_blank">Crunchyroll</a>
+        </div>
+      </div>
+
+      <button onclick="goBack()" class="back-btn">← Kembali</button>
+    </div>
+
+    <!-- Info anime -->
+    <div class="info">
+      <div class="sinopsis">
+        <h2>Lord of Mysteries </h2>
+        <p>
+         Cerita mengikuti Klein Moretti, seorang pemuda yang tiba di kota London versi fantasi misterius abad ke-19. 
+         Awalnya hanya seorang pengangguran biasa, Klein tanpa sengaja menemukan artefak kuno dan buku misterius yang
+          membawanya ke dunia organisasi rahasia, makhluk supernatural, dan konspirasi gelap.
+        <br><br>
+         Klein memulai perjalanan sebagai penyelidik misteri, perlahan mempelajari kemampuan supranatural melalui "Kartu Misteri"
+          dan transformasi menjadi "Beast" atau "Seer". Ia menghadapi konflik antar organisasi rahasia, makhluk mistik, 
+          serta rahasia dunia yang menuntut kecerdikan dan keberanian. 
+        <br><br>
+         Lord of Mysteries menonjolkan kombinasi genre misteri, steampunk, dan fantasi gelap, dengan alur rumit penuh teka-teki,
+          intrik politik, dan perkembangan karakter yang mendalam. Cerita ini memadukan teka-teki intelektual dan aksi
+           supernatural yang intens. 
+        </p>
+      </div>
+
+      <!-- === TEASER + MUSIC SECTION === -->
+<div class="media-section">
+
+  <!-- TEASER -->
+  <div class="teaser">
+    <h3>Teaser / Preview</h3>
+    <button id="openTrailer" class="trailer-btn">Tonton Trailer</button>
+  </div>
+
+  <!-- MUSIC BOX -->
+  <div class="music-box">
+    <h3>Opening & Ending</h3>
+
+    <a href="https://open.spotify.com/track/0xBD3vqW3QMdYqrwDpfgFR?si=c50f0b982bbe495d" target="_blank" class="music-link">
+      🎵 Ending Theme
+    </a>
+
+    <a href="https://open.spotify.com/track/3UXGPZ6KbF00SH7JlS0oOS?si=dd85702cbb6349b3" target="_blank" class="music-link">
+      🎵 Ending Theme
+    </a>
+  </div>
+
+</div>
+
+
+      <div class="character-section">
+  <h3>Character & Voice Actor</h3>
+
+  <!-- 1 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Klein Moretti.jpg" alt="char">
+      <div>
+        <p class="char-name">Klein Moretti  </p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Yang Kaiqi</p>
+      </div>
+      <img src="Voice actor/Yang, Kaiqi.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Audrey Hall.jpg" alt="char">
+      <div>
+        <p class="char-name">Audrey Hall</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Zhao Shuang</p>
+      </div>
+      <img src="Voice actor/Zhao, Shuang.jpg" alt="VA">
+    </div>
+  </div>
+  
+  <!-- 3 -->
+   <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Leonard Mitchell.jpg" alt="char">
+      <div>
+        <p class="char-name">Leonard Mitchell</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Jin Xian</p>
+      </div>
+      <img src="Voice actor/Jin, Xian.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Azik Eggers.jpg" alt="char">
+      <div>
+        <p class="char-name">Azik Eggers</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Liu Cong</p>
+      </div>
+      <img src="Voice actor/Liu, Cong.jpg" alt="VA">
+    </div>
+  </div>
+
+</div>
+
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </div>
+  </div>
+
+  <!-- Popup Trailer -->
+<div id="trailerPopup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close-btn">&times;</span>
+    
+    <iframe id="trailerVideo" width="560" height="315"
+      src=""    
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe> 
+  </div>
+</div>
+
+<script>
+  const openBtn = document.getElementById('openTrailer');
+  const popup = document.getElementById('trailerPopup');
+  const closeBtn = document.getElementById('closePopup');
+  const trailerVideo = document.getElementById('trailerVideo');
+
+  const trailerURL = "https://www.youtube.com/embed/BVP0ld7BB4A"; // trailer
+
+  openBtn.onclick = () => {
+    popup.style.display = "flex";          // munculkan popup
+    trailerVideo.src = trailerURL + "?autoplay=1";  // mulai video otomatis
+  };
+
+  closeBtn.onclick = () => {
+    popup.style.display = "none";
+    trailerVideo.src = ""; // stop video
+  };
+
+  // Tutup popup kalau klik di luar kotak
+  window.onclick = (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      trailerVideo.src = "";
+    }
+  };
+</script>
+
+</body>
+</html>

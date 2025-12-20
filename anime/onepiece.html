@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Anime</title>
+  <link rel="stylesheet" href="anime.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Poster anime -->
+    <div class="poster">
+      <img src="foto/One Piece.jpg" alt="One Piece">
+
+      <div class="details-box">
+        <h3>Informasi Anime</h3>
+        <p><strong>Genre:</strong>Action, Adventure, Fantasy</p>
+        <p><strong>Ditayangkan:</strong> 20 Oktober 1999 Sampai ?</p>
+        <p><strong>Tahun Rilis:</strong> 1999</p>
+        <p><strong>Jumlah Episode:</strong> Tidak diketahui</p>
+        <p><strong>Durasi:</strong> 24 menit</p>
+        <p><strong>Studio:</strong> Toei Animation</p>
+      </div>
+
+      <div class="platform-box">
+        <h3>Platform Streaming:</h3>
+        <div class="platform-links">
+          <a href="https://www.netflix.com/id" target="_blank">Netflix</a>
+          <a href="https://www.crunchyroll.com/discover" target="_blank">Crunchyroll</a>
+          <a href="https://www.bilibili.tv/id/play/37976" target="_blank">Bilibili</a>
+        </div>
+      </div>
+
+      <button onclick="goBack()" class="back-btn">← Kembali</button>
+    </div>
+
+    <!-- Info anime -->
+    <div class="info">
+      <div class="sinopsis">
+        <h2>One Piece</h2>
+        <p>
+          Cerita mengikuti Monkey D. Luffy, seorang pemuda yang memiliki kemampuan tubuh seperti karet setelah memakan Buah Iblis Gomu Gomu no Mi.
+           Luffy bercita-cita menjadi Raja Bajak Laut dengan menemukan harta legendaris bernama One Piece yang tersembunyi di Grand Line.
+        <br><br>
+       Dalam perjalanannya, Luffy membentuk kru yang beragam, dikenal sebagai Topi Jerami, yang masing-masing memiliki mimpi dan kemampuan unik.
+        Bersama-sama, mereka menghadapi berbagai musuh tangguh, menyingkap misteri dunia, dan berjuang untuk melindungi teman-teman mereka.
+        <br><br>
+       One Piece tidak hanya berisi aksi dan petualangan yang epik, tetapi juga menyoroti nilai persahabatan, keberanian, kepercayaan, dan
+        semangat pantang menyerah. Cerita ini menggambarkan perjuangan dan perjalanan panjang untuk mencapai impian di dunia yang luas dan penuh
+         tantangan.
+        </p>
+      </div>
+
+     <!-- === TEASER + MUSIC SECTION === -->
+<div class="media-section">
+
+  <!-- TEASER -->
+  <div class="teaser">
+    <h3>Teaser / Preview</h3>
+    <button id="openTrailer" class="trailer-btn">Tonton Trailer</button>
+  </div>
+
+  <!-- MUSIC BOX -->
+  <div class="music-box">
+    <h3>Opening & Ending</h3>
+
+    <a href="https://open.spotify.com/track/1PdWDLJNk040dkuXoLLE2F?si=48cfd203587c4628" target="_blank" class="music-link">
+      🎵 Opening Theme
+    </a>
+
+    <a href="https://open.spotify.com/track/12MSmLSGPWulxOPvYBy5Ss?si=6fd34d28c1cf407d" target="_blank" class="music-link">
+      🎵 Ending Theme
+    </a>
+  </div>
+
+</div>
+
+
+      <div class="character-section">
+  <h3>Character & Voice Actor</h3>
+
+  <!-- 1 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Monkey D. Luffy.jpg" alt="char">
+      <div>
+        <p class="char-name">Monkey D. Luffy</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Tanaka Mayumi</p>
+      </div>
+      <img src="Voice actor/Tanaka, Mayumi.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Roronoa Zoro.jpg" alt="char">
+      <div>
+        <p class="char-name">Roronoa Zoro</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Nakai Kazuya</p>
+      </div>
+      <img src="Voice actor/Nakai, Kazuya.jpg" alt="VA">
+    </div>
+  </div>
+  
+  <!-- 3 -->
+   <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Sanji.jpg" alt="char">
+      <div>
+        <p class="char-name">Sanji</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Hirata Hiroaki</p>
+      </div>
+      <img src="Voice actor/Hirata, Hiroaki.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Nico Robin.jpg" alt="char">
+      <div>
+        <p class="char-name">Nico Robin</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Yamaguchi Yuriko</p>
+      </div>
+      <img src="Voice actor/Yamaguchi, Yuriko.jpg" alt="VA">
+    </div>
+  </div>
+
+</div>
+
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </div>
+  </div>
+
+  <!-- Popup Trailer -->
+<div id="trailerPopup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close-btn">&times;</span>
+    
+    <iframe id="trailerVideo" width="560" height="315"
+      src=""    
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe> 
+  </div>
+</div>
+
+<script>
+  const openBtn = document.getElementById('openTrailer');
+  const popup = document.getElementById('trailerPopup');
+  const closeBtn = document.getElementById('closePopup');
+  const trailerVideo = document.getElementById('trailerVideo');
+
+  const trailerURL = "https://www.youtube.com/embed/1KMcoJBMWE4"; // trailer
+
+  openBtn.onclick = () => {
+    popup.style.display = "flex";          // munculkan popup
+    trailerVideo.src = trailerURL + "?autoplay=1";  // mulai video otomatis
+  };
+
+  closeBtn.onclick = () => {
+    popup.style.display = "none";
+    trailerVideo.src = ""; // stop video
+  };
+
+  // Tutup popup kalau klik di luar kotak
+  window.onclick = (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      trailerVideo.src = "";
+    }
+  };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spy x Family - Detail Anime</title>
+  <link rel="stylesheet" href="anime.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Poster anime + info tambahan -->
+    <div class="poster">
+      <img src="foto/spy.jpg" alt="Spy x Family">
+
+      <div class="details-box">
+        <h3>Informasi Anime</h3>
+        <p><strong>Genre:</strong> Action, Comedy</p>
+        <p><strong>Ditayangkan:</strong> 9 April 2022 Sampai 25 Juni 2022</p>
+        <p><strong>Tahun Rilis:</strong> 2022</p>
+        <p><strong>Jumlah Episode:</strong> 12</p>
+        <p><strong>Durasi:</strong> 24 menit</p>
+        <p><strong>Studio:</strong> Wit Studio, CloverWorks</p>
+      </div>
+
+      <div class="platform-box">
+        <h3>Platform Streaming:</h3>
+        <div class="platform-links">
+          <a href="https://www.netflix.com/id" target="_blank">Netflix</a>
+          <a href="https://www.crunchyroll.com/discover" target="_blank">Crunchyroll</a>
+          <a href="https://www.bilibili.tv" target="_blank">Bilibili</a>
+        </div>
+      </div>
+
+      <button onclick="goBack()" class="back-btn">← Kembali</button>
+    </div>
+
+    <!-- Info anime -->
+    <div class="info">
+      <div class="sinopsis">
+        <h2>Spy x Family </h2>
+        <p>
+         Dalam dunia penuh ketegangan politik antara dua negara besar, Westalis dan Ostania, seorang mata-mata jenius dengan nama sandi
+          Twilight ditugaskan untuk menjalankan misi penting demi menjaga perdamaian. Untuk menyusup ke sekolah elit dan mendekati targetnya,
+           ia harus membentuk keluarga palsu.
+        <br><br>
+          Dengan identitas samaran Loid Forger, ia mengadopsi seorang gadis kecil bernama Anya, tanpa tahu bahwa Anya memiliki kemampuan 
+          membaca pikiran. Untuk melengkapi perannya sebagai ayah, Loid juga menikahi Yor Briar, seorang pegawai kantor yang ternyata adalah
+           pembunuh bayaran profesional.
+        <br><br>
+          Mereka bertiga pun menjalani kehidupan keluarga pura-pura yang penuh rahasia — di mana masing-masing berusaha menyembunyikan jati 
+          diri mereka satu sama lain. Namun, di balik kebohongan itu, perlahan tumbuh hubungan tulus yang membuat keluarga Forger terasa lebih
+           nyata daripada yang mereka bayangkan.
+        </p>
+      </div>
+
+      <!-- === TEASER + MUSIC SECTION === -->
+<div class="media-section">
+
+  <!-- TEASER -->
+  <div class="teaser">
+    <h3>Teaser / Preview</h3>
+    <button id="openTrailer" class="trailer-btn">Tonton Trailer</button>
+  </div>
+
+  <!-- MUSIC BOX -->
+  <div class="music-box">
+    <h3>Opening & Ending</h3>
+
+    <a href="https://open.spotify.com/track/3RFL9hE5cBocBsjD5XLJLQ?si=91ebf2ee92b24855" target="_blank" class="music-link">
+      🎵 Opening Theme
+    </a>
+
+    <a href="https://open.spotify.com/track/5SuOikwiRyPMVoIQDJUgSV?si=112321a6efc74fb2" target="_blank" class="music-link">
+      🎵 Ending Theme
+    </a>
+  </div>
+
+</div>
+
+
+      <div class="character-section">
+  <h3>Character & Voice Actor</h3>
+
+  <!-- 1 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Anya Forger.jpg" alt="char">
+      <div>
+        <p class="char-name">Anya Forger</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Tanezaki Atsumi</p>
+      </div>
+      <img src="Voice actor/Tanezaki, Atsumi.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Yor Forger.jpg" alt="char">
+      <div>
+        <p class="char-name">Yor Forger</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Hayami Saori</p>
+      </div>
+      <img src="Voice actor/Hayami, Saori.jpg" alt="VA">
+    </div>
+  </div>
+  
+  <!-- 3 -->
+   <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Loid Forger.jpg" alt="char">
+      <div>
+        <p class="char-name">Loid Forger</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Eguchi Takuya</p>
+      </div>
+      <img src="Voice actor/Eguchi, Takuya.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Damian Desmond.jpg" alt="char">
+      <div>
+        <p class="char-name">Damian Desmond</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Fujiwara Natsumi</p>
+      </div>
+      <img src="Voice actor/Fujiwara, Natsumi.jpg" alt="VA">
+    </div>
+  </div>
+
+</div>
+
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </div>
+  </div>
+
+  <!-- Popup Trailer -->
+<div id="trailerPopup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close-btn">&times;</span>
+    
+    <iframe id="trailerVideo" width="560" height="315"
+      src=""    
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe> 
+  </div>
+</div>
+
+<script>
+  const openBtn = document.getElementById('openTrailer');
+  const popup = document.getElementById('trailerPopup');
+  const closeBtn = document.getElementById('closePopup');
+  const trailerVideo = document.getElementById('trailerVideo');
+
+  const trailerURL = "https://www.youtube.com/embed/JP6vBnazpWI"; // trailer
+
+  openBtn.onclick = () => {
+    popup.style.display = "flex";          // munculkan popup
+    trailerVideo.src = trailerURL + "?autoplay=1";  // mulai video otomatis
+  };
+
+  closeBtn.onclick = () => {
+    popup.style.display = "none";
+    trailerVideo.src = ""; // stop video
+  };
+
+  // Tutup popup kalau klik di luar kotak
+  window.onclick = (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      trailerVideo.src = "";
+    }
+  };
+</script>
+
+</body>
+</html>

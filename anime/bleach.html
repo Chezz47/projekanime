@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bleach: Sennen Kessen-hen - Detail Anime</title>
+  <link rel="stylesheet" href="anime.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Poster anime + info tambahan -->
+    <div class="poster">
+      <img src="foto/bleach.jpg" alt="Bleach: Sennen Kessen-hen">
+
+      <div class="details-box">
+        <h3>Informasi Anime</h3>
+        <p><strong>Genre:</strong> Action, Adventure, Supernatural</p>
+        <p><strong>Ditayangkan:</strong> 11 Oktober 2022 Sampai 27 Desember 2022</p>
+        <p><strong>Tahun Rilis:</strong> 2022</p>
+        <p><strong>Jumlah Episode:</strong> 13</p>
+        <p><strong>Durasi:</strong> 24 menit</p>
+        <p><strong>Studio:</strong> Studio Pierrot</p>
+      </div>
+
+      <div class="platform-box">
+        <h3>Platform Streaming:</h3>
+        <div class="platform-links">
+          <a href="https://www.bilibili.tv" target="_blank">Bilibili</a>
+        </div>
+      </div>
+
+      <button onclick="goBack()" class="back-btn">← Kembali</button>
+    </div>
+
+    <!-- Info anime -->
+    <div class="info">
+      <div class="sinopsis">
+        <h2>Bleach: Sennen Kessen-hen </h2>
+        <p>
+         Setelah bertahun-tahun menghadapi berbagai ancaman, dunia Shinigami kembali diguncang oleh konflik terbesar: perang melawan Quincy
+          yang dipimpin oleh Yhwach, sosok kuat dengan rencana untuk menaklukkan dan merombak dunia Shinigami.
+        <br><br>
+          Ichigo Kurosaki, yang kini lebih matang dan kuat, kembali menghadapi pertarungan hidup dan mati demi melindungi teman-temannya dan
+           menjaga keseimbangan antara dunia manusia dan dunia roh. Bersama rekan-rekan lama dan sekutu baru, Ichigo harus menghadapi musuh 
+           yang jauh lebih kuat, rahasia kelam masa lalu, serta kemampuan yang menuntut pengorbanan besar.
+        <br><br>
+          TBW menampilkan pertarungan epik, pengungkapan misteri dunia Shinigami, dan perkembangan karakter yang lebih kompleks, membuatnya menjadi
+           klimaks dari saga panjang Bleach yang telah menanti penggemar selama bertahun-tahun.
+        </p>
+      </div>
+
+     <!-- === TEASER + MUSIC SECTION === -->
+<div class="media-section">
+
+  <!-- TEASER -->
+  <div class="teaser">
+    <h3>Teaser / Preview</h3>
+    <button id="openTrailer" class="trailer-btn">Tonton Trailer</button>
+  </div>
+
+  <!-- MUSIC BOX -->
+  <div class="music-box">
+    <h3>Opening & Ending</h3>
+
+    <a href="https://open.spotify.com/track/5WQAussByRFjUWYQDowtHE?si=0f0e7f8c5709476b" target="_blank" class="music-link">
+      🎵 Opening Theme
+    </a>
+
+    <a href="https://open.spotify.com/track/0GiepUHAIfTH1WzpHqtVXT?si=6d2a6bcb3d014875" target="_blank" class="music-link">
+      🎵 Ending Theme
+    </a>
+  </div>
+
+</div>
+
+
+      <div class="character-section">
+  <h3>Character & Voice Actor</h3>
+
+  <!-- 1 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Ichigo Kurosaki.jpg" alt="char">
+      <div>
+        <p class="char-name">Ichigo Kurosaki</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Morita Masakazu</p>
+      </div>
+      <img src="Voice actor/Morita, Masakazu.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Uryuu Ishida.jpg" alt="char">
+      <div>
+        <p class="char-name">Uryuu Ishida</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Sugiyama Noriaki</p>
+      </div>
+      <img src="Voice actor/Sugiyama, Noriaki.jpg" alt="VA">
+    </div>
+  </div>
+  
+  <!-- 3 -->
+   <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Kenpachi Zaraki.jpg" alt="char">
+      <div>
+        <p class="char-name">Kenpachi Zaraki</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Tachiki Fumihiko</p>
+      </div>
+      <img src="Voice actor/Tachiki, Fumihiko.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Kisuke Urahara.jpg" alt="char">
+      <div>
+        <p class="char-name">Kisuke Urahara</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Miki Shinichiro</p>
+      </div>
+      <img src="Voice actor/Miki, Shinichiro.jpg" alt="VA">
+    </div>
+  </div>
+
+</div>
+
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </div>
+  </div>
+
+  <!-- Popup Trailer -->
+<div id="trailerPopup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close-btn">&times;</span>
+    
+    <iframe id="trailerVideo" width="560" height="315"
+      src=""    
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe> 
+  </div>
+</div>
+
+<script>
+  const openBtn = document.getElementById('openTrailer');
+  const popup = document.getElementById('trailerPopup');
+  const closeBtn = document.getElementById('closePopup');
+  const trailerVideo = document.getElementById('trailerVideo');
+
+  const trailerURL = "https://www.youtube.com/embed/e8YBesRKq_U"; // trailer
+
+  openBtn.onclick = () => {
+    popup.style.display = "flex";          // munculkan popup
+    trailerVideo.src = trailerURL + "?autoplay=1";  // mulai video otomatis
+  };
+
+  closeBtn.onclick = () => {
+    popup.style.display = "none";
+    trailerVideo.src = ""; // stop video
+  };
+
+  // Tutup popup kalau klik di luar kotak
+  window.onclick = (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      trailerVideo.src = "";
+    }
+  };
+</script>
+
+</body>
+</html>

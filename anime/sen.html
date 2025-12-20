@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sen to Chihiro no Kamikakushi - Detail Anime</title>
+  <link rel="stylesheet" href="anime.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Poster anime + info tambahan -->
+    <div class="poster">
+      <img src="foto/Sen to Chihiro no Kamikakushi.jpg" alt="Sen to Chihiro no Kamikakushi">
+
+      <div class="details-box">
+        <h3>Informasi Anime</h3>
+        <p><strong>Genre:</strong> Adventure, Fantasy</p>
+        <p><strong>Ditayangkan:</strong> Jul 20, 2001</p>
+        <p><strong>Tahun Rilis:</strong> 2001</p>
+        <p><strong>Jumlah Episode:</strong> 1</p>
+        <p><strong>Durasi:</strong> 2 jam 4 menit</p>
+        <p><strong>Studio:</strong> Studio Ghibli</p>
+      </div>
+
+      <div class="platform-box">
+        <h3>Platform Streaming:</h3>
+        <div class="platform-links">
+          <a href="https://www.netflix.com/id" target="_blank">Netflix</a>
+        </div>
+      </div>
+
+      <button onclick="goBack()" class="back-btn">← Kembali</button>
+    </div>
+
+    <!-- Info anime -->
+    <div class="info">
+      <div class="sinopsis">
+        <h2>Sen to Chihiro no Kamikakushi </h2>
+        <p>
+         Cerita mengikuti Chihiro Ogino, seorang gadis berusia 10 tahun, yang tersesat ke dunia roh saat keluarganya berpindah 
+         rumah. Orang tuanya berubah menjadi babi setelah memakan makanan di dunia tersebut, memaksa Chihiro untuk bertahan
+          hidup dan menemukan cara menyelamatkan mereka.
+        <br><br>
+         Chihiro bekerja di pemandian roh milik Yubaba, penyihir yang menakutkan, sambil berusaha menemukan cara untuk 
+         menyelamatkan orang tuanya. Ia dibantu Haku, seorang bocah misterius yang bisa berubah menjadi naga, dan perlahan
+          belajar keberanian, ketekunan, dan arti tanggung jawab. 
+        <br><br>
+         Spirited Away menampilkan perjalanan pertumbuhan Chihiro melalui pengalaman magis yang menakjubkan, dengan tema 
+         persahabatan, keberanian, dan identitas diri. Film ini kaya akan simbolisme, visual menakjubkan, dan pesan moral 
+         yang kuat, membuatnya menjadi karya klasik Studio Ghibli. 
+        </p>
+      </div>
+
+      <!-- === TEASER + MUSIC SECTION === -->
+<div class="media-section">
+
+  <!-- TEASER -->
+  <div class="teaser">
+    <h3>Teaser / Preview</h3>
+    <button id="openTrailer" class="trailer-btn">Tonton Trailer</button>
+  </div>
+
+  <!-- MUSIC BOX -->
+  <div class="music-box">
+    <h3>Opening & Ending</h3>
+
+    <a href="https://open.spotify.com/track/26W3vc21aHLaHF90gbsiq1?si=bbebf9d70db1489d" target="_blank" class="music-link">
+      🎵 Opening Theme
+    </a>
+
+    <a href="https://open.spotify.com/track/0FJL3Dwu8oUpwDb80qNdvP?si=8af4890d29054648" target="_blank" class="music-link">
+      🎵 Ending Theme
+    </a>
+  </div>
+
+</div>
+
+
+      <div class="character-section">
+  <h3>Character & Voice Actor</h3>
+
+  <!-- 1 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Haku.jpg" alt="char">
+      <div>
+        <p class="char-name">Haku</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Irino Miyu</p>
+      </div>
+      <img src="Voice actor/Irino, Miyu.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Chihiro Ogino.jpg" alt="char">
+      <div>
+        <p class="char-name">Chihiro Ogino</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Hiiragi Rumi</p>
+      </div>
+      <img src="Voice actor/Hiiragi, Rumi.jpg" alt="VA">
+    </div>
+  </div>
+  
+  <!-- 3 -->
+   <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Kaonashi.jpg" alt="char">
+      <div>
+        <p class="char-name">Kaonashi </p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Nakamura Akio</p>
+      </div>
+      <img src="Voice actor/Nakamura, Akio.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Kamajii.jpg" alt="char">
+      <div>
+        <p class="char-name">Kamajii</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Sugawara Bunta</p>
+      </div>
+      <img src="Voice actor/Sugawara, Bunta.jpg" alt="VA">
+    </div>
+  </div>
+
+</div>
+
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </div>
+  </div>
+
+  <!-- Popup Trailer -->
+<div id="trailerPopup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close-btn">&times;</span>
+    
+    <iframe id="trailerVideo" width="560" height="315"
+      src=""    
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe> 
+  </div>
+</div>
+
+<script>
+  const openBtn = document.getElementById('openTrailer');
+  const popup = document.getElementById('trailerPopup');
+  const closeBtn = document.getElementById('closePopup');
+  const trailerVideo = document.getElementById('trailerVideo');
+
+  const trailerURL = "https://www.youtube.com/embed/ByXuk9QqQkk"; // trailer
+
+  openBtn.onclick = () => {
+    popup.style.display = "flex";          // munculkan popup
+    trailerVideo.src = trailerURL + "?autoplay=1";  // mulai video otomatis
+  };
+
+  closeBtn.onclick = () => {
+    popup.style.display = "none";
+    trailerVideo.src = ""; // stop video
+  };
+
+  // Tutup popup kalau klik di luar kotak
+  window.onclick = (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      trailerVideo.src = "";
+    }
+  };
+</script>
+
+</body>
+</html>

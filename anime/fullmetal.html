@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Anime</title>
+  <link rel="stylesheet" href="anime.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Poster anime -->
+    <div class="poster">
+      <img src="foto/fullmetal.jpg" alt="Fullmetal Alchemist: Brotherhood">
+
+      <div class="details-box">
+        <h3>Informasi Anime</h3>
+        <p><strong>Genre:</strong>Action, Adventure, Drama, Fantasy</p>
+        <p><strong>Ditayangkan:</strong> 5 April 2009 Sampai 4 Juli 2010</p>
+        <p><strong>Tahun Rilis:</strong> 2009</p>
+        <p><strong>Jumlah Episode:</strong> 64</p>
+        <p><strong>Durasi:</strong> 24 menit</p>
+        <p><strong>Studio:</strong> Bones</p>
+      </div>
+
+      <div class="platform-box">
+        <h3>Platform Streaming:</h3>
+        <div class="platform-links">
+          <a href="https://www.crunchyroll.com/discover" target="_blank">Crunchyroll</a>
+          <a href="https://www.bilibili.tv/play/2090295" target="_blank">Bilibili</a>
+        </div>
+      </div>
+
+      <button onclick="goBack()" class="back-btn">← Kembali</button>
+    </div>
+
+    <!-- Info anime -->
+    <div class="info">
+      <div class="sinopsis">
+        <h2>Fullmetal Alchemist: Brotherhood</h2>
+        <p>
+          Cerita mengikuti dua saudara, Edward dan Alphonse Elric, yang berusaha menghidupkan kembali ibu mereka menggunakan alkimia. Namun,
+           percobaan itu gagal tragis: Edward kehilangan satu tangan dan satu kaki, sementara Alphonse kehilangan seluruh tubuhnya dan jiwanya
+            menempel pada baju zirah besi.
+        <br><br>
+        Untuk memulihkan tubuh mereka, kedua saudara ini memulai perjalanan panjang untuk menemukan Batu Bertuah (Philosopher’s Stone), sebuah
+         artefak alkimia legendaris yang diyakini mampu melampaui hukum pertukaran setara. Dalam perjalanan, mereka menghadapi musuh yang kuat,
+          rahasia gelap tentang pemerintah, serta konspirasi yang mengancam dunia.
+        <br><br>
+        Fullmetal Alchemist: Brotherhood menonjolkan tema pengorbanan, tanggung jawab, persaudaraan, dan etika dalam ilmu pengetahuan. Cerita ini
+         memadukan aksi yang seru, alur yang kompleks, dan karakter yang mendalam, menjadikannya salah satu anime klasik yang tak lekang oleh
+          waktu.
+        </p>
+      </div>
+
+      <!-- === TEASER + MUSIC SECTION === -->
+<div class="media-section">
+
+  <!-- TEASER -->
+  <div class="teaser">
+    <h3>Teaser / Preview</h3>
+    <button id="openTrailer" class="trailer-btn">Tonton Trailer</button>
+  </div>
+
+  <!-- MUSIC BOX -->
+  <div class="music-box">
+    <h3>Opening & Ending</h3>
+
+    <a href="https://open.spotify.com/track/4OQq1bcP12GQQXJNupxqfR?si=173b6edc25e546ce" target="_blank" class="music-link">
+      🎵 Opening Theme
+    </a>
+
+    <a href="https://open.spotify.com/track/5hyuqT3PwqSKtH1EUSST20?si=90583e61ad2f48bc" target="_blank" class="music-link">
+      🎵 Ending Theme
+    </a>
+  </div>
+
+</div>
+
+
+      <div class="character-section">
+  <h3>Character & Voice Actor</h3>
+
+  <!-- 1 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Edward Elric.jpg" alt="char">
+      <div>
+        <p class="char-name">Edward Elric</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Park Romi</p>
+      </div>
+      <img src="Voice actor/Park, Romi.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Alphonse Elric.jpg" alt="char">
+      <div>
+        <p class="char-name">Alphonse Elric</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Kugimiya Rie</p>
+      </div>
+      <img src="Voice actor/Kugimiya, Rie.jpg" alt="VA">
+    </div>
+  </div>
+  
+  <!-- 3 -->
+   <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Roy Mustang.jpg" alt="char">
+      <div>
+        <p class="char-name">Roy Mustang</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Miki Shinichiro</p>
+      </div>
+      <img src="Voice actor/Miki, Shinichiro.jpg" alt="VA">
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="character-card">
+    <div class="char-info">
+      <img src="karakter/Maes Hughes.jpg" alt="char">
+      <div>
+        <p class="char-name">Maes Hughes</p>
+      </div>
+    </div>
+
+    <div class="va-info">
+      <div>
+        <p class="va-name">Fujiwara Keiji</p>
+      </div>
+      <img src="Voice actor/Fujiwara, Keiji.jpg" alt="VA">
+    </div>
+  </div>
+
+</div>
+
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </div>
+  </div>
+
+  <!-- Popup Trailer -->
+<div id="trailerPopup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close-btn">&times;</span>
+    
+    <iframe id="trailerVideo" width="560" height="315"
+      src=""    
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe> 
+  </div>
+</div>
+
+<script>
+  const openBtn = document.getElementById('openTrailer');
+  const popup = document.getElementById('trailerPopup');
+  const closeBtn = document.getElementById('closePopup');
+  const trailerVideo = document.getElementById('trailerVideo');
+
+  const trailerURL = "https://www.youtube.com/embed/kx0nBaS_q50"; // trailer
+
+  openBtn.onclick = () => {
+    popup.style.display = "flex";          // munculkan popup
+    trailerVideo.src = trailerURL + "?autoplay=1";  // mulai video otomatis
+  };
+
+  closeBtn.onclick = () => {
+    popup.style.display = "none";
+    trailerVideo.src = ""; // stop video
+  };
+
+  // Tutup popup kalau klik di luar kotak
+  window.onclick = (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      trailerVideo.src = "";
+    }
+  };
+</script>
+
+</body>
+</html>

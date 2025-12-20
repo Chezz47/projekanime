@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Kami</title>
+  <link rel="stylesheet" href="kontak.css">
+</head>
+<body>
+
+<header>
+  <h1>Kontak Kami</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="anime.html">Anime List</a>
+    <a href="manga.html">Manga List</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Hubungi Kami</h2>
+  <p>Jika ada saran, pertanyaan, atau ingin bekerjasama, isi formulir di bawah ini.</p>
+
+  <form id="contactForm" 
+      action="https://formsubmit.co/muhammadchestaadabiputra%40gmail.com" 
+      method="POST">
+
+    <!-- Anti spam -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <label>Nama Lengkap</label>
+    <input type="text" name="nama" id="nama" required>
+
+    <label>Email</label>
+    <input type="email" name="email" id="email" required>
+
+    <label>Pesan</label>
+    <textarea name="pesan" id="pesan" rows="5" required></textarea>
+
+    <button type="submit">Kirim Pesan</button>
+  </form>
+
+  <div id="popup" class="popup">
+    <p>Pesan berhasil dikirim!</p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+</div>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // akan langsung dikirim ke formsubmit
+
+    let nama = document.getElementById("nama").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let pesan = document.getElementById("pesan").value.trim();
+
+    if (nama === "" || email === "" || pesan === "") {
+        alert("Semua form wajib diisi!");
+        return;
+    }
+
+    // Jika lulus validasi → submit
+    event.target.submit();
+
+    // Tampilkan popup
+    document.getElementById("popup").style.display = "block";
+
+    // Kosongkan form
+    document.getElementById("contactForm").reset();
+});
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
